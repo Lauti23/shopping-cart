@@ -1,0 +1,50 @@
+.itemContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.item img {
+    width: 300px;
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.item p {
+    margin-bottom: 1rem;
+}
+
+.item button {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px transparent black;
+    transition: .3s all;
+}
+
+.item button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
